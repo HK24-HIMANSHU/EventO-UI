@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './component/landing/landing.component';
 import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
+import { HomeComponent } from './component/home/home.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { SignupComponent } from './component/signup/signup.component';
     LandingComponent,
     LoginComponent,
     SignupComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

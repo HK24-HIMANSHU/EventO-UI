@@ -76,3 +76,32 @@
         transform: translateY(2px);
     }
 }
+
+.logo {
+    width: 81px;
+    height: 28px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.navbar {
+    width: 100%;
+    height: 40px;
+    padding-top: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    /* background-color: antiquewhite; */
+}
+
+.navbar ul {
+    display: flex;
+    gap: 14px;
+}
