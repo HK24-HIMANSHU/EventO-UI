@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './component/landing/landing.component';
 import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
+import { HomeComponent } from './component/home/home.component';
+import { EventPostComponent } from './component/event-post/event-post.component';
+import { SidebarComponent } from './component/sidebar/sidebar.component';
+import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -14,6 +18,10 @@ import { SignupComponent } from './component/signup/signup.component';
     LandingComponent,
     LoginComponent,
     SignupComponent,
+    HomeComponent,
+    EventPostComponent,
+    SidebarComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,

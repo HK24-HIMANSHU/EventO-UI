@@ -69,7 +69,7 @@
     overflow: hidden;
     padding-left: 16px;
     padding-right: 16px;
-    position: relative;
+    /* position: relative; */
     text-align: left;
     text-decoration: none;
     transition: box-shadow .15s, transform .15s;
@@ -80,7 +80,7 @@
     will-change: box-shadow, transform;
     font-size: 18px;
     width: 24%;
-    position: absolute;
+    /* position: absolute; */
     top: 200px;
     bottom: 0;
     left: 0;
@@ -100,6 +100,14 @@
 .button-29:active {
     box-shadow: #3c4fe0 0 3px 7px inset;
     transform: translateY(2px);
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
 }
 
 .getStart {

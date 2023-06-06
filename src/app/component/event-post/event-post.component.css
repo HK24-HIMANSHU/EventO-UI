@@ -1,0 +1,43 @@
+.event-post {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 12px;
+    height: fit-content;
+    background-color: #2B2B2B;
+    border-radius: 8px;
+}
+
+.post-wrapper {
+    /* background-color: aqua; */
+    /* display: flex; */
+    gap: 12px;
+}
+
+.event-post h2,
+.event-post p {
+    background-color: #2B2B2B;
+    padding: 4px;
+    color: #fff;
+}
+
+.postAndcomm-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.user-member {
+    background-color: #2B2B2B;
+    display: flex;
+}
+
+.user-member img {
+    border-radius: 50%;
+}
+
+.user-mem-people {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2B2B2B;
+}
