@@ -10,6 +10,8 @@ import { HomeComponent } from './component/home/home.component';
 import { EventPostComponent } from './component/event-post/event-post.component';
 import { SidebarComponent } from './component/sidebar/sidebar.component';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
+import { NavbarMainComponent } from './component/navbar-main/navbar-main.component';
+import { CommunityCardComponent } from './component/community-card/community-card.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -22,6 +24,8 @@ import { NavBarComponent } from './component/nav-bar/nav-bar.component';
     EventPostComponent,
     SidebarComponent,
     NavBarComponent,
+    NavbarMainComponent,
+    CommunityCardComponent,
   ],
   imports: [
     BrowserModule,

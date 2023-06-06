@@ -1,130 +1,49 @@
 .landing-wrapper {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Raleway', sans-serif;
-}
-
-.logo {
-    width: 81px;
-    height: 28px;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-}
-
-.navbar {
-    width: 100%;
-    height: 40px;
-    padding-top: 24px;
-    padding-left: 50px;
-    padding-right: 50px;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    /* background-color: antiquewhite; */
-}
-
-.navbar ul {
-    display: flex;
-    gap: 14px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
 }
 
 .hero {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 68px;
-    line-height: 75px;
-    text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 68px;
+  line-height: 75px;
+  text-align: center;
 
-    margin-top: 90px;
-    /* background-color: antiquewhite; */
-    color: #FFFFFF;
+  margin-top: 90px;
+  /* background-color: antiquewhite; */
+  color: var(--color-white);
 }
 
 .hero1 {
-    font-weight: 600;
-}
-
-.button-29 {
-    align-items: center;
-    appearance: none;
-    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-    border: 0;
-    border-radius: 6px;
-    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: "JetBrains Mono", monospace;
-    height: 48px;
-    justify-content: center;
-    line-height: 1;
-    list-style: none;
-    overflow: hidden;
-    padding-left: 16px;
-    padding-right: 16px;
-    /* position: relative; */
-    text-align: left;
-    text-decoration: none;
-    transition: box-shadow .15s, transform .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    will-change: box-shadow, transform;
-    font-size: 18px;
-    width: 24%;
-    /* position: absolute; */
-    top: 200px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.button-29:focus {
-    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-}
-
-.button-29:hover {
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-    transform: translateY(-2px);
-}
-
-.button-29:active {
-    box-shadow: #3c4fe0 0 3px 7px inset;
-    transform: translateY(2px);
+  font-weight: 600;
 }
 
 .hero-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 420px;
 }
 
 .getStart {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-
-    padding: 12px 24px;
-    background: #502987;
-    width: 180px;
-    height: 52px;
-    border-radius: 8px;
-    color: #fff;
-    border: none;
-    position: absolute;
-    top: 60%;
-    left: 0;
-    right: 0;
-    margin: auto;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 12px 24px;
+  background: #502987;
+  width: 180px;
+  height: 52px;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }

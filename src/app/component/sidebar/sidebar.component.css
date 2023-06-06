@@ -15,7 +15,7 @@
     padding-top: 24px;
     padding-left: 50px;
     padding-right: 50px;
-    color: #fff;
+    color: var(--color-white);
     display: flex;
     justify-content: space-between;
     position: sticky;
