@@ -1,0 +1,36 @@
+.searchbox {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  display: flex;
+  gap: 10px;
+}
+
+.searchbox-input input[type="text"] {
+  border: none;
+  outline: none;
+  background: #494949;
+  border-radius: 6px;  
+  height: 100%;
+  font-size: 14px;
+  color: #f6f6f6;
+  padding: 8px;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+.searchbox .searchbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  background: #3c4fe0;
+  border: none;
+  font-size: 14px;
+  color: #f6f6f6;
+  float: right;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}

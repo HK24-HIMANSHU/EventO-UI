@@ -1,0 +1,13 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  height: 100%;
+  padding: 8px;
+  background: #404040;
+  font-size: 14px;
+  font-weight: 500;
+  color: #f6f6f6;
+  cursor: pointer;
+  border-radius: 6px;
+}

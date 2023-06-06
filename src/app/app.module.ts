@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +14,9 @@ import { SidebarComponent } from './component/sidebar/sidebar.component';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { NavbarMainComponent } from './component/navbar-main/navbar-main.component';
 import { CommunityCardComponent } from './component/community-card/community-card.component';
+import { DropdownComponent } from './component/dropdown/dropdown.component';
+import { SearchboxComponent } from './component/searchbox/searchbox.component';
+import { HomeFuncComponent } from './component/home-func/home-func.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -26,12 +31,12 @@ import { CommunityCardComponent } from './component/community-card/community-car
     NavBarComponent,
     NavbarMainComponent,
     CommunityCardComponent,
+    DropdownComponent,
+    SearchboxComponent,
+    HomeFuncComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

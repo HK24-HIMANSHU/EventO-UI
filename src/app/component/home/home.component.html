@@ -9,38 +9,30 @@
       <app-sidebar> </app-sidebar>
     </div>
     <div class="postAndcomm-wrapper">
-      <app-event-post
-        title="Dummy Title"
-        description="This is dummy description"
-        rules="This is dummy rules"
-        userProfile="User-1"
-        memberJoined="123"
-      ></app-event-post>
-
-      <app-community-card
-        title="Dummy Title"
-        description="This is dummy description"
-        rules="This is dummy rules"
-        userProfile="User-1"
-        memberJoined="123"
-      >
-      </app-community-card>
-      <!-- <div class="community-wrapper">
-        <div class="community-post">
-          <img
-            src="https://uploads.sarvgyan.com/2014/08/event-management.jpg"
-            style="
-              height: 200px;
-              width: 100%;
-              object-fit: cover;
-              border-radius: 8px;
-            "
-            alt=""
-          />
-          <h2>Community Name</h2>
-          <p>This is a dummy description for the event</p>
+      <app-home-func (type)="getType($event)"></app-home-func>
+      <div *ngIf="type == '1'">
+        <div *ngFor="let ev of events">
+          <app-event-post
+            title="{{ ev.Name }}"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos! Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            rules="{{ ev.Rules }}"
+            userProfile="{{ ev.UserId }}"
+            memberJoined="42"
+          ></app-event-post>
         </div>
-      </div> -->
+      </div>
+      <div *ngIf="type != '1'">
+        <div *ngFor="let comm of communities">
+          <app-community-card
+            title="{{ comm.Name }}"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos! Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            rules="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            userProfile="{{ comm.UserId }}"
+            memberJoined="139"
+          >
+          </app-community-card>
+        </div>
+      </div>
     </div>
   </div>
 </div>
