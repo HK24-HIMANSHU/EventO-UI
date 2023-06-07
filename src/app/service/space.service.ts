@@ -9,9 +9,13 @@ import { Observable } from 'rxjs';
 export class SpaceService {
   space: Space = {} as Space;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
-  url = 'http://localhost:3000/space';
+  url = 'http://localhost:5171/Space';
+
+  public getAllSpaces(): Observable<Space[]> {
+    return this.httpClient.get<Space[]>(this.url + '/all');
+  }
 
   public createSpace(space: Space) {
     return this.httpClient.post(this.url + '/create', space);
@@ -21,8 +25,8 @@ export class SpaceService {
     return this.httpClient.put(this.url + '/update', space);
   }
 
-  public getSpaceById(id: number) {
-    return this.httpClient.get(this.url + id);
+  public getSpaceById(id: number): Observable<any> {
+    return this.httpClient.get<any>(this.url + `/${id}`);
   }
   public getSpaceByOwnerId(id: number): Observable<Space[]> {
     return this.httpClient.get<Space[]>(this.url + '/owner/' + id);

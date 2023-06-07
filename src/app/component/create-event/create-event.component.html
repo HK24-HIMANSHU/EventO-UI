@@ -5,17 +5,22 @@
     <h1>Host a Event</h1>
   </div>
 
-  <form>
+  <form name="">
     <div class="form-group1">
       <button class="btn btn-secondary">
-        <app-user-display [user]="{ id: '1', Username: 'ahbc' }"></app-user-display>
+        <app-user-display [user]="user"></app-user-display>
       </button>
 
       <span class="span">/</span>
 
       <span>
         <div>
-          <input id="repositoryName" class="form-control1" placeholder="Enter community name" />
+          <input
+            id="repositoryName"
+            class="form-control1"
+            placeholder="Enter community name"
+            [(ngModel)]="event.Name"
+          />
         </div>
       </span>
     </div>
@@ -23,31 +28,60 @@
     <br />
     <div class="form-group">
       <label for="communitydesc">Space Id </label>
-      <app-dropdown></app-dropdown>
+      <app-dropdown
+        [items]="spaces"
+        (sendOutValue)="onSelectSpace($event)"
+      ></app-dropdown>
     </div>
 
-    <div class="form-group">
-      <label for="rulesdesc">Community Rules</label>
-
-      <textarea id="rulesdesc" class="form-control code-editor" placeholder="Enter Community Rules"></textarea>
+    <div style="display: flex; gap: 40px">
+      <div class="form-group">
+        <label for="rulesdesc">Date</label>
+        <input
+          style="width: 100%"
+          id="rulesdesc"
+          type="Date"
+          class="form-control1"
+          placeholder="Enter Community Rules"
+          style="width: fit-content"
+          [(ngModel)]="event.Date"
+        />
+      </div>
+      <div class="form-group">
+        <label for="rulesdesc">Time</label>
+        <input
+          style="width: 100%"
+          id="rulesdesc"
+          type="Time"
+          class="form-control1"
+          placeholder="Enter Time"
+          style="width: fit-content"
+          [(ngModel)]="event.Time"
+        />
+      </div>
     </div>
-    <div class="form-group">
-      <label for="rulesdesc">Date</label>
-      <textarea style="width:100%" id="rulesdesc" type="Date" class="form-control1"
-        placeholder="Enter Community Rules"></textarea>
-    </div>
-    <div class="form-group">
-      <label for="rulesdesc">Time</label>
 
-      <textarea style="width:100%" id="rulesdesc" type="Time" class="form-control1" placeholder="Enter Time"></textarea>
-
-    </div>
     <div class="form-group">
       <label for="rulesdesc">Price</label>
 
-      <textarea style="width:100%" id="rulesdesc" type="Time" class="form-control1"
-        placeholder="Enter Price"></textarea>
+      <input
+        style="width: 100%"
+        id="rulesdesc"
+        type="number"
+        class="form-control1"
+        placeholder="Enter Price"
+        style="width: fit-content"
+        [(ngModel)]="event.Price"
+      />
+    </div>
+    <div class="form-group">
+      <label for="rulesdesc">Community Rules</label>
 
+      <textarea
+        id="rulesdesc"
+        class="form-control code-editor"
+        placeholder="Enter Community Rules"
+      ></textarea>
     </div>
 
     <div class="form-group">

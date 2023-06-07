@@ -17,8 +17,8 @@ export class EventService {
     return this.httpClient.get<Event[]>(this.url + '/all');
   }
 
-  public createEvent(event: Event) {
-    return this.httpClient.post(this.url + '/create', event);
+  public createEvent(event: Event): Observable<any> {
+    return this.httpClient.post<any>(this.url + '/create', event);
   }
 
   public updateEvent(event: Event) {
