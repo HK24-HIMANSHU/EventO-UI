@@ -8,13 +8,14 @@ import { Observable } from 'rxjs';
 })
 export class OwnerAuthService {
   owner: Owner = {} as Owner;
+  
 
   url = 'http://localhost:5171/Auth/owner';
 
   constructor(private httpClient: HttpClient) {}
 
-  public login(owner: any): Observable<any> {
-    return this.httpClient.post<any>(this.url + '/login', owner);
+  public login(user: any): Observable<any> {
+    return this.httpClient.post<any>(this.url + '/login', user);
   }
 
   public signup(owner: Owner): Observable<any> {

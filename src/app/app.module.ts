@@ -57,7 +57,7 @@ import { OwnerSignupComponent } from './component/owner-signup/owner-signup.comp
     AllEventsComponent,
     OwnerHomeComponent,
     SpaceListingComponent,
-    SpaceCardComponent
+    SpaceCardComponent,
     UserDisplayComponent,
     OwnerloginComponent,
     OwnerSignupComponent,
@@ -66,4 +66,4 @@ import { OwnerSignupComponent } from './component/owner-signup/owner-signup.comp
   providers: [],
   bootstrap: [AppComponent, MainLayoutComponent],
 })
-export class AppModule { }
+export class AppModule {}

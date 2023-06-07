@@ -20,13 +20,11 @@ export class OwnerloginComponent {
   ) {}
 
   onSubmit() {
+    console.log(this.user);
     this.service.login(this.user).subscribe((data) => {
-      if (data.message == true) {
-        // alert('Sign Up successful!!');
-        this.router.navigate(['event']);
-      } else {
-        alert('Login Failed!');
-      }
+      // alert('Sign Up successful!!');
+      this.router.navigate(['allevent']);
+      console.log(data);
     });
   }
 }
