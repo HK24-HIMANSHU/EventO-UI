@@ -2,67 +2,72 @@
 
 <div class="container">
   <div class="header">
-    <h1>Create a comminity</h1>
+    <h1>Create a community</h1>
   </div>
 
   <form>
     <div class="form-group1">
       <button class="btn btn-secondary">
-        <app-user-display
-          [user]="{ id: '1', Username: 'ahbc' }"
-        ></app-user-display>
+        <app-user-display [user]="{ id: '1', Username: 'ahbc' }"></app-user-display>
       </button>
 
       <span class="span">/</span>
 
       <span>
         <div>
-          <input
-            id="repositoryName"
-            class="form-control1"
-            placeholder="Enter community name"
-          /></div
-      ></span>
+          <input id="repositoryName" class="form-control1" placeholder="Enter community name" />
+        </div>
+      </span>
     </div>
 
     <br />
 
     <div class="form-group">
-      <label for="communitydesc">Community Description</label>
+      <label for="communitydesc">Price</label>
 
-      <textarea
-        id="communitydesc"
-        class="form-control"
-        placeholder="Enter Description"
-      ></textarea>
+      <input type="number" id="communitydesc" class="form-control" placeholder="Enter Price" />
     </div>
 
     <div class="form-group">
-      <label for="rulesdesc">Community Rules</label>
+      <label for="communitydesc">Created At</label>
 
-      <textarea
-        id="rulesdesc"
-        class="form-control code-editor"
-        placeholder="Enter Community Rules"
-      ></textarea>
+      <input type="date" id="communitydesc" class="form-control" placeholder="Enter Price" />
     </div>
-
     <div class="form-group">
-      <label>Community visibility</label>
+      <label style="font-weight: 700;">Exclusive</label>
 
       <div class="radio-group">
         <label>
           <input type="radio" name="visibility" value="public" checked />
 
-          Public
+          True
         </label>
 
         <label>
           <input type="radio" name="visibility" value="private" />
 
-          Private
+          False
         </label>
       </div>
+
+    </div>
+    <div class="form-group">
+      <label style="font-weight: 700;">Premium</label>
+
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="visibility" value="public" checked />
+
+          True
+        </label>
+
+        <label>
+          <input type="radio" name="visibility" value="private" />
+
+          False
+        </label>
+      </div>
+
     </div>
 
     <div class="form-group">
