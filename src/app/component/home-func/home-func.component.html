@@ -1,0 +1,11 @@
+<div class="home-func-container">
+  <app-dropdown
+    [items]="sortList"
+    onchange="onchange()"
+    (sendOutValue)="getSelectedValue($event)"
+  ></app-dropdown>
+  <app-searchbox></app-searchbox>
+  <!-- <div style="color: white">
+    {{ selectedValue }}
+  </div> -->
+</div>
