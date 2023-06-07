@@ -8,61 +8,46 @@
   <form>
     <div class="form-group1">
       <button class="btn btn-secondary">
-        <app-user-display
-          [user]="{ id: '1', Username: 'ahbc' }"
-        ></app-user-display>
+        <app-user-display [user]="{ id: '1', Username: 'ahbc' }"></app-user-display>
       </button>
 
       <span class="span">/</span>
 
       <span>
         <div>
-          <input
-            id="repositoryName"
-            class="form-control1"
-            placeholder="Enter community name"
-          /></div
-      ></span>
+          <input id="repositoryName" class="form-control1" placeholder="Enter community name" />
+        </div>
+      </span>
     </div>
 
     <br />
-
     <div class="form-group">
-      <label for="communitydesc">Community Description</label>
-
-      <textarea
-        id="communitydesc"
-        class="form-control"
-        placeholder="Enter Description"
-      ></textarea>
+      <label for="communitydesc">Space Id </label>
+      <app-dropdown></app-dropdown>
     </div>
 
     <div class="form-group">
       <label for="rulesdesc">Community Rules</label>
 
-      <textarea
-        id="rulesdesc"
-        class="form-control code-editor"
-        placeholder="Enter Community Rules"
-      ></textarea>
+      <textarea id="rulesdesc" class="form-control code-editor" placeholder="Enter Community Rules"></textarea>
     </div>
-
     <div class="form-group">
-      <label>Community visibility</label>
+      <label for="rulesdesc">Date</label>
+      <textarea style="width:100%" id="rulesdesc" type="Date" class="form-control1"
+        placeholder="Enter Community Rules"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="rulesdesc">Time</label>
 
-      <div class="radio-group">
-        <label>
-          <input type="radio" name="visibility" value="public" checked />
+      <textarea style="width:100%" id="rulesdesc" type="Time" class="form-control1" placeholder="Enter Time"></textarea>
 
-          Public
-        </label>
+    </div>
+    <div class="form-group">
+      <label for="rulesdesc">Price</label>
 
-        <label>
-          <input type="radio" name="visibility" value="private" />
+      <textarea style="width:100%" id="rulesdesc" type="Time" class="form-control1"
+        placeholder="Enter Price"></textarea>
 
-          Private
-        </label>
-      </div>
     </div>
 
     <div class="form-group">
