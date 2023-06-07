@@ -1,0 +1,13 @@
+<div style="padding: 0 50px 0 50px; display: flex; justify-content: start; gap: 20px; flex-wrap: wrap;"
+    class="wrapper-list">
+    <div *ngFor="let ev of spaces">
+        <div class="list-c" style="max-width: 300px;">
+            <img style="object-fit: contain; border-radius: 12px; background-color: #2b2b2b"
+                src="https://th.bing.com/th/id/OIP.KRTsmxgy3qRHl8Zke8xtxAHaD7?pid=ImgDet&rs=1" alt="" width="100%">
+            <p style="background-color: #2b2b2b;font-size: 16px; color:#fff">{{ev.Name}}</p>
+            <p style="background-color: #2b2b2b;font-size: 16px; color:#fff">Capacity: {{ev.Capacity}}</p>
+            <p style="background-color: #2b2b2b; font-size: 16px; color:#fff">Amenities: {{ev.Amenities}}</p>
+            <p style="background-color: #2b2b2b; font-size: 16px; color:#fff">Price: {{ev.Price}}</p>
+        </div>
+    </div>
+</div>

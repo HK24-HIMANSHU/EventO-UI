@@ -22,6 +22,11 @@ import { MemberdisplayComponent } from './component/memberdisplay/memberdisplay.
 import { CreateEventComponent } from './component/create-event/create-event.component';
 import { CreateCommunityComponent } from './component/create-community/create-community.component';
 import { MainLayoutComponent } from './component/main-layout/main-layout.component';
+import { CommunityPageComponent } from './component/community-page/community-page.component';
+import { AllEventsComponent } from './component/all-events/all-events.component';
+import { OwnerHomeComponent } from './component/owner-home/owner-home.component';
+import { SpaceListingComponent } from './component/space-listing/space-listing.component';
+import { SpaceCardComponent } from './component/space-card/space-card.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -44,6 +49,12 @@ import { MainLayoutComponent } from './component/main-layout/main-layout.compone
     CreateEventComponent,
     CreateCommunityComponent,
     MainLayoutComponent,
+    MemberdisplayComponent,
+    CommunityPageComponent,
+    AllEventsComponent,
+    OwnerHomeComponent,
+    SpaceListingComponent,
+    SpaceCardComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

@@ -1,0 +1,32 @@
+<div class="home-wrapper">
+    <app-navbar-main></app-navbar-main>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="home-container">
+        <div class="postAndcomm-wrapper">
+            <div style="padding:0 50px 16px 50px; display: flex; justify-content:space-between ; "
+                class="wrap-search-btn">
+                <app-searchbox></app-searchbox>
+                <button class="create-event">Create Events</button>
+            </div>
+            <!-- <app-home-func (type)="getType($event)"></app-home-func>
+      <div *ngIf="type == '1'"> -->
+            <div style="padding: 0 50px 0 50px; display: flex; justify-content: start; gap: 20px; flex-wrap: wrap;"
+                class="wrapper-post">
+                <div *ngFor="let ev of events">
+                    <div style="max-width: 300px;">
+
+                        <app-event-post title="{{ ev.Name }}" description="Lorem ipsum dolor sit amet !"
+                            rules="{{ ev.Rules }}" userProfile="{{ ev.UserId }}" memberJoined="42"></app-event-post>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- </div>
+  </div>
+</div> -->

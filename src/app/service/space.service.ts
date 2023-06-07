@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Space } from '../model/space';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -8,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class SpaceService {
   space: Space = {} as Space;
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient) { }
 
   url = 'http://localhost:3000/space';
 
@@ -23,8 +24,8 @@ export class SpaceService {
   public getSpaceById(id: number) {
     return this.httpClient.get(this.url + id);
   }
-  public getSpaceByOwnerId(id: number) {
-    // return this.httpClient.get(this.url + '/owner/' + id);
+  public getSpaceByOwnerId(id: number): Observable<Space[]> {
+    return this.httpClient.get<Space[]>(this.url + '/owner/' + id);
   }
   public getSpaceByCommunityId(id: number) {
     // return this.httpClient.get(this.url + '/community/' + id);
