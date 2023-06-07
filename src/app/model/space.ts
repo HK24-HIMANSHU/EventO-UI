@@ -6,4 +6,5 @@ export interface Space {
   Amenities: string;
   CreatedAt: Date;
   AdminId: number;
+  Price: number;
 }
