@@ -13,6 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   background: #131313;
+  font-family: Raleway;
 }
 
 a {
@@ -26,11 +27,9 @@ ul {
 
 .primary-btn {
   align-items: center;
-  background-image: radial-gradient(
-    100% 100% at 100% 0,
-    #5adaff 0,
-    #5468ff 100%
-  );
+  background-image: radial-gradient(100% 100% at 100% 0,
+      #5adaff 0,
+      #5468ff 100%);
   border: 0;
   border-radius: 6px;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,

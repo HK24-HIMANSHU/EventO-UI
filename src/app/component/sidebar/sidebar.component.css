@@ -26,3 +26,9 @@
     display: flex;
     gap: 14px;
 }
+
+.sidebar {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}

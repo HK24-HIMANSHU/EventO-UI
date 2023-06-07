@@ -12,6 +12,8 @@ import { SidebarComponent } from './component/sidebar/sidebar.component';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { NavbarMainComponent } from './component/navbar-main/navbar-main.component';
 import { CommunityCardComponent } from './component/community-card/community-card.component';
+import { EventPageComponent } from './component/event-page/event-page.component';
+import { MemberdisplayComponent } from './component/memberdisplay/memberdisplay.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -26,6 +28,8 @@ import { CommunityCardComponent } from './component/community-card/community-car
     NavBarComponent,
     NavbarMainComponent,
     CommunityCardComponent,
+    EventPageComponent,
+    MemberdisplayComponent,
   ],
   imports: [
     BrowserModule,
