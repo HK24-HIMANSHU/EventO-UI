@@ -13,6 +13,7 @@ import { SpaceListingComponent } from './component/space-listing/space-listing.c
 import { OwnerloginComponent } from './component/ownerlogin/ownerlogin.component';
 import { OwnerSignupComponent } from './component/owner-signup/owner-signup.component';
 import { AllCommunitiesComponent } from './component/all-communities/all-communities.component';
+import { CreateSpaceComponent } from './component/create-space/create-space.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -29,10 +30,11 @@ const routes: Routes = [
   { path: 'owner/login', component: OwnerloginComponent },
   { path: 'owner/signup', component: OwnerSignupComponent },
   { path: 'community/create', component: CreateCommunityComponent },
+  { path: 'space/create', component: CreateSpaceComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
