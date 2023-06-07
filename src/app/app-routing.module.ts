@@ -7,6 +7,8 @@ import { HomeComponent } from './component/home/home.component';
 import { EventPageComponent } from './component/event-page/event-page.component';
 import { CreateEventComponent } from './component/create-event/create-event.component';
 import { CreateCommunityComponent } from './component/create-community/create-community.component';
+import { OwnerloginComponent } from './component/ownerlogin/ownerlogin.component';
+import { OwnerSignupComponent } from './component/owner-signup/owner-signup.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -15,6 +17,9 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'event', component: EventPageComponent },
   { path: 'event/create', component: CreateEventComponent },
+  { path: 'owner/login', component: OwnerloginComponent },
+  { path: 'owner/signup', component: OwnerSignupComponent },
+  { path: 'community/create', component: CreateCommunityComponent },
   { path: 'community/create', component: CreateCommunityComponent },
 ];
 

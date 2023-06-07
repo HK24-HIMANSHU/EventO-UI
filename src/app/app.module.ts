@@ -23,6 +23,8 @@ import { CreateEventComponent } from './component/create-event/create-event.comp
 import { CreateCommunityComponent } from './component/create-community/create-community.component';
 import { MainLayoutComponent } from './component/main-layout/main-layout.component';
 import { UserDisplayComponent } from './component/user-display/user-display.component';
+import { OwnerloginComponent } from './component/ownerlogin/ownerlogin.component';
+import { OwnerSignupComponent } from './component/owner-signup/owner-signup.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -46,6 +48,8 @@ import { UserDisplayComponent } from './component/user-display/user-display.comp
     CreateCommunityComponent,
     MainLayoutComponent,
     UserDisplayComponent,
+    OwnerloginComponent,
+    OwnerSignupComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
