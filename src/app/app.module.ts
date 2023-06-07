@@ -17,6 +17,9 @@ import { CommunityCardComponent } from './component/community-card/community-car
 import { DropdownComponent } from './component/dropdown/dropdown.component';
 import { SearchboxComponent } from './component/searchbox/searchbox.component';
 import { HomeFuncComponent } from './component/home-func/home-func.component';
+import { MemberdisplayComponent } from './component/memberdisplay/memberdisplay.component';
+import { EventPageComponent } from './component/event-page/event-page.component';
+import { CommunityPageComponent } from './component/community-page/community-page.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -34,9 +37,12 @@ import { HomeFuncComponent } from './component/home-func/home-func.component';
     DropdownComponent,
     SearchboxComponent,
     HomeFuncComponent,
+    MemberdisplayComponent,
+    EventPageComponent,
+    CommunityPageComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
