@@ -49,4 +49,4 @@ import { MainLayoutComponent } from './component/main-layout/main-layout.compone
   providers: [],
   bootstrap: [AppComponent, MainLayoutComponent],
 })
-export class AppModule {}
+export class AppModule { }

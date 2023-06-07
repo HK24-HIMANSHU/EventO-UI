@@ -1,9 +1,11 @@
 <div class="user-wrapper">
-    
-    <h4>Members&nbsp;Joining</h4>
-    <div class="user-member">
-        <img src="https://th.bing.com/th/id/OIP.RZlM4DvoR7A-UpM9grW2JAHaHj?pid=ImgDet&rs=1" alt="profile-img"
-            height="24px" width="24px" />
-        <p style="font-size: 14px; color: var(--color-white)">{{ userProfile }}</p>
+    <h4 style="margin-bottom: 8px;">Members&nbsp;Joining&nbsp;(09/11)</h4>
+    <div *ngFor="let user of users">
+        <div class="user-member">
+            <img src="https://th.bing.com/th/id/OIP.RZlM4DvoR7A-UpM9grW2JAHaHj?pid=ImgDet&rs=1" alt="profile-img"
+                height="24px" width="24px" />
+            <p style="font-size: 14px; color: var(--color-white)">{{ user.Username }}</p>
+        </div>
     </div>
+
 </div>

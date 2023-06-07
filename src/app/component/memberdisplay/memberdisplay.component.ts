@@ -6,5 +6,17 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./memberdisplay.component.css']
 })
 export class MemberdisplayComponent {
-  @Input() userProfile: string = "userProfile"
+  @Input() userProfile = [];
+
+  users = [
+    {
+      Id: "1",
+      Username: "isdbcisd"
+    },
+    {
+      Id: "2",
+      Username: "hgasah"
+    }
+  ];
+
 }

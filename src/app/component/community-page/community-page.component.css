@@ -1,0 +1,27 @@
+.eventpage-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    color: #f6f6f6;
+    flex-direction: row-reverse;
+    padding: 32px 50px;
+    gap: 40px;
+}
+
+.eventpage-wrapper {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.date-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eventpage-wrapper button {
+    align-self: flex-end;
+}
