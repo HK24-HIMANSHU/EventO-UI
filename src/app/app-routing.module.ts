@@ -24,10 +24,8 @@ const routes: Routes = [
   { path: 'spacelisting', component: SpaceListingComponent },
   // { path: 'events', component: EventPageComponent },
 
-  { path: 'event/create', component: CreateEventComponent },
   { path: 'owner/login', component: OwnerloginComponent },
   { path: 'owner/signup', component: OwnerSignupComponent },
-  { path: 'community/create', component: CreateCommunityComponent },
   { path: 'community/create', component: CreateCommunityComponent },
 ];
 
@@ -35,4 +33,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

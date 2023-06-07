@@ -11,10 +11,10 @@ export class EventService {
 
   constructor(private httpClient: HttpClient) {}
 
-  url = 'http://localhost:3000/events';
+  url = 'http://localhost:5171/events';
 
   public getAllEvents(): Observable<Event[]> {
-    return this.httpClient.get<Event[]>(this.url);
+    return this.httpClient.get<Event[]>(this.url + '/all');
   }
 
   public createEvent(event: Event) {

@@ -1,7 +1,6 @@
 export interface User {
   Id: number;
-  Usernamwe: string;
+  Username: string;
   Password: string;
   Email: string;
-  CreatedAt: Date;
 }
