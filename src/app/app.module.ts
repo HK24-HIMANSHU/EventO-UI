@@ -22,6 +22,11 @@ import { MemberdisplayComponent } from './component/memberdisplay/memberdisplay.
 import { CreateEventComponent } from './component/create-event/create-event.component';
 import { CreateCommunityComponent } from './component/create-community/create-community.component';
 import { MainLayoutComponent } from './component/main-layout/main-layout.component';
+import { CommunityPageComponent } from './component/community-page/community-page.component';
+import { AllEventsComponent } from './component/all-events/all-events.component';
+import { OwnerHomeComponent } from './component/owner-home/owner-home.component';
+import { SpaceListingComponent } from './component/space-listing/space-listing.component';
+import { SpaceCardComponent } from './component/space-card/space-card.component';
 import { UserDisplayComponent } from './component/user-display/user-display.component';
 import { OwnerloginComponent } from './component/ownerlogin/ownerlogin.component';
 import { OwnerSignupComponent } from './component/owner-signup/owner-signup.component';
@@ -47,6 +52,12 @@ import { OwnerSignupComponent } from './component/owner-signup/owner-signup.comp
     CreateEventComponent,
     CreateCommunityComponent,
     MainLayoutComponent,
+    MemberdisplayComponent,
+    CommunityPageComponent,
+    AllEventsComponent,
+    OwnerHomeComponent,
+    SpaceListingComponent,
+    SpaceCardComponent
     UserDisplayComponent,
     OwnerloginComponent,
     OwnerSignupComponent,

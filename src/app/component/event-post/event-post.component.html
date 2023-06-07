@@ -1,23 +1,22 @@
 <div class="event-post">
   <div class="post-badge">Event</div>
   <img src="https://uploads.sarvgyan.com/2014/08/event-management.jpg" style="
-      height: 100px;
+      height: 200px;
       width: 100%;
       object-fit: cover;
       border-radius: 8px;
       margin-bottom: 20px;
     " alt="" />
-  <h2>{{ title }}</h2>
+  <p style="font-size: 18px; font-weight: 600; color: #fff;">{{ title }}</p>
   <p class="gray-text">{{ description }}</p>
-  <br />
   <p class="gray-text">{{ rules }}</p>
-  <br />
+  <br>
   <div class="user-mem-people">
     <div class="user-member">
       <img src="https://th.bing.com/th/id/OIP.RZlM4DvoR7A-UpM9grW2JAHaHj?pid=ImgDet&rs=1" alt="profile-img"
         height="24px" width="24px" />
-      <p style="color: var(--color-white)">{{ userProfile }}</p>
+      <p style="font-size: 12px; color: var(--color-white)">{{ userProfile }}</p>
     </div>
-    <div class="post-members">{{ memberJoined }} Members</div>
+    <p style="font-size: 12px;" class="post-members">{{ memberJoined }} Members</p>
   </div>
 </div>

@@ -22,14 +22,9 @@
   cursor: context-menu;
 }
 
-.event-post h2 {
-  background-color: #2b2b2b;
-  padding: 4px;
-  color: #fff;
-}
 .event-post p {
   background-color: #2b2b2b;
-  padding: 4px;
+  padding: 0 0 0 4px;
 }
 
 .gray-text {
@@ -60,7 +55,7 @@
 
 .post-members {
   background-color: #2b2b2b;
-  padding: 4px;
+  padding: 0 0 0 4px;
   color: #c7c7c7;
   cursor: pointer;
   transition: all ease-in-out 0.2s;

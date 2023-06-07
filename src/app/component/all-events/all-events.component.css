@@ -1,0 +1,15 @@
+.create-event {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3c4fe0;
+    border: none;
+    font-size: 14px;
+    color: #f6f6f6;
+    float: right;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
