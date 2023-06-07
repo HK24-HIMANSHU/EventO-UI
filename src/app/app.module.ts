@@ -27,6 +27,7 @@ import { AllEventsComponent } from './component/all-events/all-events.component'
 import { OwnerHomeComponent } from './component/owner-home/owner-home.component';
 import { SpaceListingComponent } from './component/space-listing/space-listing.component';
 import { SpaceCardComponent } from './component/space-card/space-card.component';
+import { AllCommunitiesComponent } from './component/all-communities/all-communities.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -54,7 +55,8 @@ import { SpaceCardComponent } from './component/space-card/space-card.component'
     AllEventsComponent,
     OwnerHomeComponent,
     SpaceListingComponent,
-    SpaceCardComponent
+    SpaceCardComponent,
+    AllCommunitiesComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

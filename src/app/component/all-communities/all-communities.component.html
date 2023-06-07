@@ -9,7 +9,7 @@
             <div style="padding:0 50px 16px 50px; display: flex; justify-content:space-between ; "
                 class="wrap-search-btn">
                 <app-searchbox></app-searchbox>
-                <a routerLink="/event/create" class="create-event">Create Events</a>
+                <a routerLink="/community/create" class="create-event">Create Community</a>
             </div>
             <!-- <app-home-func (type)="getType($event)"></app-home-func>
       <div *ngIf="type == '1'"> -->
@@ -17,9 +17,7 @@
                 class="wrapper-post">
                 <div *ngFor="let ev of events">
                     <div style="max-width: 300px;">
-
-                        <app-event-post title="{{ ev.Name }}" description="Lorem ipsum dolor sit amet !"
-                            rules="{{ ev.Rules }}" userProfile="{{ ev.UserId }}" memberJoined="42"></app-event-post>
+                        <app-community-card></app-community-card>
                     </div>
                 </div>
             </div>
