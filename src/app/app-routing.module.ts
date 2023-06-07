@@ -12,6 +12,7 @@ import { OwnerHomeComponent } from './component/owner-home/owner-home.component'
 import { SpaceListingComponent } from './component/space-listing/space-listing.component';
 import { OwnerloginComponent } from './component/ownerlogin/ownerlogin.component';
 import { OwnerSignupComponent } from './component/owner-signup/owner-signup.component';
+import { AllCommunitiesComponent } from './component/all-communities/all-communities.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'allevent', component: AllEventsComponent },
   { path: 'ownerhome', component: OwnerHomeComponent },
   { path: 'spacelisting', component: SpaceListingComponent },
+  { path: 'allcommunity', component: AllCommunitiesComponent },
   // { path: 'events', component: EventPageComponent },
 
   { path: 'owner/login', component: OwnerloginComponent },

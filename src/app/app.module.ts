@@ -30,6 +30,7 @@ import { SpaceCardComponent } from './component/space-card/space-card.component'
 import { UserDisplayComponent } from './component/user-display/user-display.component';
 import { OwnerloginComponent } from './component/ownerlogin/ownerlogin.component';
 import { OwnerSignupComponent } from './component/owner-signup/owner-signup.component';
+import { AllCommunitiesComponent } from './component/all-communities/all-communities.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -61,6 +62,8 @@ import { OwnerSignupComponent } from './component/owner-signup/owner-signup.comp
     UserDisplayComponent,
     OwnerloginComponent,
     OwnerSignupComponent,
+    SpaceCardComponent,
+    AllCommunitiesComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

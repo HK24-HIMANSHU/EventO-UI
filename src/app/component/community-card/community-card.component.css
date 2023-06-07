@@ -14,7 +14,7 @@
   top: 15px;
   left: 15px;
   color: var(--color-white);
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
   color: #f6f6f6;
   padding: 6px 8px;
   font-size: 12px;
@@ -27,6 +27,7 @@
   padding: 4px;
   color: #fff;
 }
+
 .event-comm p {
   background-color: #2b2b2b;
   padding: 4px;

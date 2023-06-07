@@ -3,7 +3,7 @@
 /event/create
 /event/update
 /event/{id}
-/event/cummunity/{id}
+/event/community/{id}
 /event/owner/{id}
 /event/user/{id}
 /event/space/{id}
