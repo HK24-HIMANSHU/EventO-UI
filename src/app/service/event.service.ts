@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Event } from '../model/event';
+import { EventDto } from '../model/event-dto';
 
 @Injectable({
   providedIn: 'root',
@@ -13,8 +14,8 @@ export class EventService {
 
   url = 'http://localhost:5171/events';
 
-  public getAllEvents(): Observable<Event[]> {
-    return this.httpClient.get<Event[]>(this.url + '/all');
+  public getAllEvents(): Observable<EventDto[]> {
+    return this.httpClient.get<EventDto[]>(this.url + '/all');
   }
 
   public createEvent(event: Event): Observable<any> {

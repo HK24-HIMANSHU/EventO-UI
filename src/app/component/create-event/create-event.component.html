@@ -5,7 +5,7 @@
     <h1>Host a Event</h1>
   </div>
 
-  <form name="">
+  <div name="">
     <div class="form-group1">
       <button class="btn btn-secondary">
         <app-user-display [user]="user"></app-user-display>
@@ -60,18 +60,28 @@
         />
       </div>
     </div>
+    <div class="form-group">
+      <label for="rulesdesc">Duration</label>
 
+      <input
+        [(ngModel)]="event.Duration"
+        id="rulesdesc"
+        type="number"
+        class="form-control1"
+        placeholder="Duration in minutes"
+        style="width: fit-content"
+      />
+    </div>
     <div class="form-group">
       <label for="rulesdesc">Price</label>
 
       <input
-        style="width: 100%"
+        [(ngModel)]="event.Price"
         id="rulesdesc"
         type="number"
         class="form-control1"
         placeholder="Enter Price"
         style="width: fit-content"
-        [(ngModel)]="event.Price"
       />
     </div>
     <div class="form-group">
@@ -81,11 +91,14 @@
         id="rulesdesc"
         class="form-control code-editor"
         placeholder="Enter Community Rules"
+        [(ngModel)]="event.Rules"
       ></textarea>
     </div>
 
     <div class="form-group">
-      <button class="btn btn-primary">Create community</button>
+      <button (click)="onCreate()" class="btn btn-primary">
+        Create community
+      </button>
     </div>
-  </form>
+  </div>
 </div>

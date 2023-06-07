@@ -14,9 +14,9 @@ export class AllCommunitiesComponent {
   ) { }
   ngOnInit(): void {
     let obEvents = this.eventService.getAllEvents();
-    obEvents.subscribe((data: Event[]) => {
-      this.events = data;
-    });
+    // obEvents.subscribe((data: Event[]) => {
+    //   this.events = data;
+    // });
 
   }
 }

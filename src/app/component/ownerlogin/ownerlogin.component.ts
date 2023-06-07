@@ -24,6 +24,7 @@ export class OwnerloginComponent {
     this.service.login(this.user).subscribe((data) => {
       // alert('Sign Up successful!!');
       this.router.navigate(['allevent']);
+      localStorage.setItem('ownerInfo', JSON.stringify(data));
       console.log(data);
     });
   }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Community } from 'src/app/model/community';
 import { Event } from 'src/app/model/event';
+import { EventDto } from 'src/app/model/event-dto';
 import { CommunityService } from 'src/app/service/community.service';
 import { EventService } from 'src/app/service/event.service';
 
@@ -11,11 +12,13 @@ import { EventService } from 'src/app/service/event.service';
   styleUrls: ['./all-events.component.css'],
 })
 export class AllEventsComponent {
-  events: Event[] = [];
+  events: EventDto[] = [];
+
   constructor(private eventService: EventService, private router: Router) {}
   ngOnInit(): void {
     let obEvents = this.eventService.getAllEvents();
-    obEvents.subscribe((data: Event[]) => {
+    obEvents.subscribe((data) => {
+      console.log(data);
       this.events = data;
     });
   }

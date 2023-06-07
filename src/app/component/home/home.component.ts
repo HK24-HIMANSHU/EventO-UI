@@ -18,9 +18,9 @@ export class HomeComponent implements OnInit {
   ) {}
   ngOnInit(): void {
     let obEvents = this.eventService.getAllEvents();
-    obEvents.subscribe((data: Event[]) => {
-      this.events = data;
-    });
+    // obEvents.subscribe((data: Event[]) => {
+    //   this.events = data;
+    // });
     this.communityService
       .getAllCommunities()
       .subscribe((communities: Community[]) => {

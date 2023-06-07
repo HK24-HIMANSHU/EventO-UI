@@ -1,51 +1,78 @@
 <app-navbar-main></app-navbar-main>
 
 <div class="container">
-    <div class="header">
-        <h1>List your Space</h1>
+  <div class="header">
+    <h1>List your Space</h1>
+  </div>
+
+  <div>
+    <div class="form-group1">
+      <button class="btn btn-secondary">
+        <app-user-display [user]="owner"></app-user-display>
+      </button>
+
+      <span class="span">/</span>
+
+      <span>
+        <div>
+          <input
+            [(ngModel)]="space.name"
+            id="repositoryName"
+            class="form-control1"
+            placeholder="Enter space name"
+          />
+        </div>
+      </span>
     </div>
 
-    <form>
-        <div class="form-group1">
-            <button class="btn btn-secondary">
-                <app-user-display [user]="{ id: '1', Username: 'ahbc' }"></app-user-display>
-            </button>
+    <br />
 
-            <span class="span">/</span>
+    <div class="form-group">
+      <label for="communitydesc">Space Location</label>
 
-            <span>
-                <div>
-                    <input id="repositoryName" class="form-control1" placeholder="Enter space name" />
-                </div>
-            </span>
-        </div>
+      <textarea
+        id="communitydesc"
+        class="form-control"
+        placeholder="Enter Location"
+        [(ngModel)]="space.location"
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <label for="communitydesc">Space Capacity</label>
 
-        <br />
+      <textarea
+        id="communitydesc"
+        class="form-control"
+        type="number"
+        [(ngModel)]="space.capacity"
+        placeholder="Enter Capacity"
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <label for="communitydesc">Space Price</label>
 
-        <div class="form-group">
-            <label for="communitydesc">Space Location</label>
+      <textarea
+        id="communitydesc"
+        class="form-control"
+        type="number"
+        [(ngModel)]="space.price"
+        placeholder="Enter Price"
+      ></textarea>
+    </div>
 
-            <textarea id="communitydesc" class="form-control" placeholder="Enter Location"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="communitydesc">Space Capacity</label>
+    <div class="form-group">
+      <label for="rulesdesc">Space Amenities</label>
 
-            <textarea id="communitydesc" class="form-control" type="number" placeholder="Enter Capacity"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="communitydesc">Space Price</label>
+      <textarea
+        [(ngModel)]="space.amenities"
+        id="rulesdesc"
+        class="form-control code-editor"
+        placeholder="Enter Space Amenities"
+      ></textarea>
+    </div>
 
-            <textarea id="communitydesc" class="form-control" type="number" placeholder="Enter Price"></textarea>
-        </div>
-
-        <div class="form-group">
-            <label for="rulesdesc">Space Amenities</label>
-
-            <textarea id="rulesdesc" class="form-control code-editor" placeholder="Enter Space Amenities"></textarea>
-        </div>
-
-        <div class="form-group">
-            <button class="btn btn-primary">Create Space</button>
-        </div>
-    </form>
+    <div class="form-group">
+      <button (click)="onCreate()" class="btn btn-primary">Create Space</button>
+    </div>
+  </div>
 </div>

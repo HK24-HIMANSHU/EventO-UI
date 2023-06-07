@@ -17,8 +17,11 @@ export class SpaceService {
     return this.httpClient.get<Space[]>(this.url + '/all');
   }
 
-  public createSpace(space: Space) {
-    return this.httpClient.post(this.url + '/create', space);
+  public createSpace(space: Space, id: number) {
+    return this.httpClient.post(
+      'http://localhost:5171/owner' + `/${id}` + '/spaces',
+      space
+    );
   }
 
   public updateSpace(space: Space) {

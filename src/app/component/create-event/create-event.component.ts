@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Event } from 'src/app/model/event';
 import { Space } from 'src/app/model/space';
 import { User } from 'src/app/model/user';
@@ -13,10 +14,12 @@ import { SpaceService } from 'src/app/service/space.service';
 export class CreateEventComponent implements OnInit {
   constructor(
     private spService: SpaceService,
-    private evService: EventService
+    private evService: EventService,
+    private router: Router
   ) {}
   spaces: Space[] = [];
   temp: any;
+  def: any;
   user: User = {
     Id: 0,
     Email: '',
@@ -28,7 +31,7 @@ export class CreateEventComponent implements OnInit {
     Name: '',
     Date: new Date(),
     Duration: 0,
-    Price: 0,
+    Price: 20,
     Rules: '',
     SpaceId: 0,
     UserId: 0,
@@ -63,11 +66,13 @@ export class CreateEventComponent implements OnInit {
       alert('Select a space');
       return;
     }
+    console.log(this.event);
+
     this.evService.createEvent(this.event).subscribe((data) => {
-      console.log(data);
-      if (data.message == true) {
-        alert('Event Successfully Created!!');
-      }
+      console.log(data, 'data');
+
+      alert('Event Successfully Created!!');
+      this.router.navigate(['allevent']);
     });
   }
 }

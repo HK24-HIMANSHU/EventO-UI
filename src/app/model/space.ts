@@ -1,10 +1,10 @@
 export interface Space {
-  Id: number;
-  Name: string;
-  Capacity: number;
-  Location: string;
-  Amenities: string;
-  CreatedAt: Date;
-  AdminId: number;
-  Price: number;
+  id: number;
+  name: string;
+  capacity: number;
+  location: string;
+  amenities: string;
+  createdAt: Date;
+  adminId: number;
+  price: number;
 }

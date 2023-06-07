@@ -22,14 +22,13 @@ const routes: Routes = [
   { path: 'user/login', component: LoginComponent },
   { path: 'user/signup', component: SignupComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'event/details', component: EventPageComponent },
-  { path: 'community/details', component: CommunityDetailsComponent },
-  { path: 'space/details', component: SpaceDetailsComponent },
+  { path: 'event/details/:id', component: EventPageComponent },
+  { path: 'community/details/:id', component: CommunityDetailsComponent },
+  { path: 'space/details/:id', component: SpaceDetailsComponent },
   { path: 'allevent', component: AllEventsComponent },
   { path: 'ownerhome', component: OwnerHomeComponent },
   { path: 'spacelisting', component: SpaceListingComponent },
   { path: 'allcommunity', component: AllCommunitiesComponent },
-  // { path: 'events', component: EventPageComponent },
   { path: 'event/create', component: CreateEventComponent },
   { path: 'owner/login', component: OwnerloginComponent },
   { path: 'owner/signup', component: OwnerSignupComponent },
@@ -41,4 +40,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
