@@ -22,6 +22,7 @@ import { MemberdisplayComponent } from './component/memberdisplay/memberdisplay.
 import { CreateEventComponent } from './component/create-event/create-event.component';
 import { CreateCommunityComponent } from './component/create-community/create-community.component';
 import { MainLayoutComponent } from './component/main-layout/main-layout.component';
+import { UserDisplayComponent } from './component/user-display/user-display.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -44,6 +45,7 @@ import { MainLayoutComponent } from './component/main-layout/main-layout.compone
     CreateEventComponent,
     CreateCommunityComponent,
     MainLayoutComponent,
+    UserDisplayComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

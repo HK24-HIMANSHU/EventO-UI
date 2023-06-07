@@ -1,0 +1,8 @@
+.user-member {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 4px;
+    background-color: transparent;
+
+}
