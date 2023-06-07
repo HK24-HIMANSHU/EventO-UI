@@ -27,6 +27,9 @@ import { AllEventsComponent } from './component/all-events/all-events.component'
 import { OwnerHomeComponent } from './component/owner-home/owner-home.component';
 import { SpaceListingComponent } from './component/space-listing/space-listing.component';
 import { SpaceCardComponent } from './component/space-card/space-card.component';
+import { UserDisplayComponent } from './component/user-display/user-display.component';
+import { OwnerloginComponent } from './component/ownerlogin/ownerlogin.component';
+import { OwnerSignupComponent } from './component/owner-signup/owner-signup.component';
 import { AllCommunitiesComponent } from './component/all-communities/all-communities.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
@@ -56,10 +59,14 @@ import { AllCommunitiesComponent } from './component/all-communities/all-communi
     OwnerHomeComponent,
     SpaceListingComponent,
     SpaceCardComponent,
+    UserDisplayComponent,
+    OwnerloginComponent,
+    OwnerSignupComponent,
+    SpaceCardComponent,
     AllCommunitiesComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent, MainLayoutComponent],
 })
-export class AppModule { }
+export class AppModule {}

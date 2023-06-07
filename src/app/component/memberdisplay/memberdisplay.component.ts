@@ -1,22 +1,24 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { User } from 'src/app/model/user';
 
 @Component({
   selector: 'app-memberdisplay',
   templateUrl: './memberdisplay.component.html',
-  styleUrls: ['./memberdisplay.component.css']
+  styleUrls: ['./memberdisplay.component.css'],
 })
-export class MemberdisplayComponent {
+export class MemberdisplayComponent implements OnInit {
   @Input() userProfile = [];
 
   users = [
     {
-      Id: "1",
-      Username: "isdbcisd"
+      Id: '1',
+      Username: 'iuasxdas',
     },
     {
-      Id: "2",
-      Username: "hgasah"
-    }
+      Id: '2',
+      Username: 'iuasxdas',
+    },
   ];
 
+  ngOnInit(): void {}
 }

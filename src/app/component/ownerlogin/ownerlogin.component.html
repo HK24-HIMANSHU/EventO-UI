@@ -1,0 +1,21 @@
+<app-nav-bar></app-nav-bar>
+<form class="login-wrapper" (submit)="onSubmit()">
+  <h1 style="color: #fff; align-self: center; margin: 32px">Login</h1>
+  <input
+    class="inputField"
+    type="text"
+    name="ForId"
+    id="ForId"
+    [(ngModel)]="user.Email"
+    placeholder="Enter Email"
+  />
+  <input
+    class="inputField"
+    type="password"
+    name="ForId"
+    id="ForId"
+    [(ngModel)]="user.Password"
+    placeholder="Enter Password"
+  />
+  <button class="primary-btn">Login</button>
+</form>

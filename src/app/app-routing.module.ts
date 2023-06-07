@@ -10,6 +10,8 @@ import { CreateCommunityComponent } from './component/create-community/create-co
 import { AllEventsComponent } from './component/all-events/all-events.component';
 import { OwnerHomeComponent } from './component/owner-home/owner-home.component';
 import { SpaceListingComponent } from './component/space-listing/space-listing.component';
+import { OwnerloginComponent } from './component/ownerlogin/ownerlogin.component';
+import { OwnerSignupComponent } from './component/owner-signup/owner-signup.component';
 import { AllCommunitiesComponent } from './component/all-communities/all-communities.component';
 
 const routes: Routes = [
@@ -25,6 +27,9 @@ const routes: Routes = [
   // { path: 'events', component: EventPageComponent },
 
   { path: 'event/create', component: CreateEventComponent },
+  { path: 'owner/login', component: OwnerloginComponent },
+  { path: 'owner/signup', component: OwnerSignupComponent },
+  { path: 'community/create', component: CreateCommunityComponent },
   { path: 'community/create', component: CreateCommunityComponent },
 ];
 

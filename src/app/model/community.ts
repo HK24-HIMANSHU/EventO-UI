@@ -5,4 +5,6 @@ export interface Community {
   IsExclusive: boolean;
   IsPremium: boolean;
   CreatedAt: Date;
+  Price: number;
+  InviteTokenId: number;
 }

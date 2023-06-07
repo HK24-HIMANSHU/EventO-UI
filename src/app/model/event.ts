@@ -9,4 +9,5 @@ export interface Event {
   Duration: number;
   Rules: string;
   CreatedAt: Date;
+  Price: number;
 }
