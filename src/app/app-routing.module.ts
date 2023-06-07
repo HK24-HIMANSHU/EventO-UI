@@ -15,6 +15,7 @@ import { OwnerSignupComponent } from './component/owner-signup/owner-signup.comp
 import { AllCommunitiesComponent } from './component/all-communities/all-communities.component';
 import { CreateSpaceComponent } from './component/create-space/create-space.component';
 import { SpaceDetailsComponent } from './component/space-details/space-details.component';
+import { CommunityDetailsComponent } from './component/community-details/community-details.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'user/signup', component: SignupComponent },
   { path: 'home', component: HomeComponent },
   { path: 'event/details', component: EventPageComponent },
+  { path: 'community/details', component: CommunityDetailsComponent },
   { path: 'space/details', component: SpaceDetailsComponent },
   { path: 'allevent', component: AllEventsComponent },
   { path: 'ownerhome', component: OwnerHomeComponent },

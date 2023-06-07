@@ -33,6 +33,7 @@ import { OwnerSignupComponent } from './component/owner-signup/owner-signup.comp
 import { AllCommunitiesComponent } from './component/all-communities/all-communities.component';
 import { CreateSpaceComponent } from './component/create-space/create-space.component';
 import { SpaceDetailsComponent } from './component/space-details/space-details.component';
+import { CommunityDetailsComponent } from './component/community-details/community-details.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -67,7 +68,8 @@ import { SpaceDetailsComponent } from './component/space-details/space-details.c
     SpaceCardComponent,
     AllCommunitiesComponent,
     CreateSpaceComponent,
-    SpaceDetailsComponent
+    SpaceDetailsComponent,
+    CommunityDetailsComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
