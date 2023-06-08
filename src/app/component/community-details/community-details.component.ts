@@ -19,8 +19,8 @@ export class CommunityDetailsComponent {
   ) {}
   com: Community = {} as Community;
   id: any;
-  joined: boolean = true;
-  myComs = [];
+  joined: boolean = false;
+  members:any = [];
   thisUser: any;
   isMine: boolean = false;
   ngOnInit(): void {
@@ -33,19 +33,14 @@ export class CommunityDetailsComponent {
         if (this.thisUser.id == data.id) {
           this.isMine = true;
         } else {
-          this.memberService
-            .getUserJoinedCommunities(this.id)
-            .subscribe((data) => {
-              this.myComs = data;
-              console.log(data);
-
-              this.myComs.forEach((us: any) => {
-                console.log('us', us.communityId);
-                if (this.id == us.communityId) {
-                  this.joined = true;
-                }
-              });
+          this.cmService.getCommunityPlainById(this.id).subscribe((data) => {
+            console.log(data);
+            this.members = data.members;
+            this.members.forEach((ele: any) => {
+              this.thisUser.id = ele.userId;
+              this.joined = true;
             });
+          });
         }
       });
     });
@@ -53,5 +48,13 @@ export class CommunityDetailsComponent {
 
   onDeleteCommunity() {}
 
-  onJoin() {}
+  onJoin() {
+    this.memberService
+      .createMember(this.id, this.thisUser.id)
+      .subscribe((data) => {
+        console.log(data);
+        this.joined == true;
+      });
+    this.ngOnInit();
+  }
 }

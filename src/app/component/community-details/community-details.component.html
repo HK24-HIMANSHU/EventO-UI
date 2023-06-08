@@ -2,13 +2,15 @@
 
 <div class="eventpage-container">
   <div style="display: flex" class="memberdis">
-    <app-memberdisplay></app-memberdisplay>
+    <app-memberdisplay userProfile="{{members}}"></app-memberdisplay>
   </div>
 
   <div class="eventpage-wrapper">
     <div style="display: flex; justify-content: space-between" class="div-flex">
       <h1>{{ com.name }}</h1>
-      <a *ngIf="isMine" routerLink="/event/create" class="create-event">Create Events</a>
+      <a *ngIf="isMine" routerLink="/event/create" class="create-event"
+        >Create Events</a
+      >
     </div>
 
     <img
@@ -35,10 +37,10 @@
     </div>
     <div *ngIf="!isMine">
       <div *ngIf="!joined">
-        <button class="primary-btn">Join</button>
+        <button (click)="onJoin()" class="primary-btn">Join</button>
       </div>
       <div *ngIf="joined">
-        <button class="primary-btn">Joined</button>
+        <button class="success-btn">Joined</button>
       </div>
     </div>
   </div>

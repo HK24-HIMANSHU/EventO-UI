@@ -28,6 +28,10 @@ export class CommunityService {
     return this.httpClient.get<Community>(this.url + `/${id}`);
   }
 
+  public getCommunityPlainById(id: number): Observable<any> {
+    return this.httpClient.get<any>(this.url + `/${id}`);
+  }
+
   public getCommunityByOwnerId(id: number) {
     return this.httpClient.get(this.url + '/owner/' + id);
   }

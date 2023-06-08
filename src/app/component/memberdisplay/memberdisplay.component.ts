@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { User } from 'src/app/model/user';
+import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-memberdisplay',
@@ -7,18 +8,26 @@ import { User } from 'src/app/model/user';
   styleUrls: ['./memberdisplay.component.css'],
 })
 export class MemberdisplayComponent implements OnInit {
-  @Input() userProfile = [];
+  constructor(private userService: UserService) {}
+  @Input() userProfile: any = [];
+  count: number = 0;
 
-  users = [
-    {
-      Id: '1',
-      Username: 'iuasxdas',
-    },
-    {
-      Id: '2',
-      Username: 'iuasxdas',
-    },
-  ];
+  us: any = {
+    Id: 0,
+    Username: '',
+  };
+  curr: any = [];
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.userProfile, 'userProfile');
+    this.userProfile.forEach((user: any) => {
+      this.userService
+        .getUserById(this.userProfile.userId)
+        .subscribe((data) => {
+          console.log(data, 'dataaaa');
+        });
+      this.us.Id = user.id;
+      this.us.Username = user.username;
+    });
+  }
 }
