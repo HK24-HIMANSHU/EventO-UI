@@ -16,11 +16,13 @@ import { AllCommunitiesComponent } from './component/all-communities/all-communi
 import { CreateSpaceComponent } from './component/create-space/create-space.component';
 import { SpaceDetailsComponent } from './component/space-details/space-details.component';
 import { CommunityDetailsComponent } from './component/community-details/community-details.component';
+import { UserHomePageComponent } from './Components/user-home-page/user-home-page.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'user/login', component: LoginComponent },
   { path: 'user/signup', component: SignupComponent },
+  { path: 'user/home/:id', component: UserHomePageComponent },
   { path: 'home', component: HomeComponent },
   { path: 'event/details/:id', component: EventPageComponent },
   { path: 'community/details/:id', component: CommunityDetailsComponent },

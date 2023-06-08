@@ -73,6 +73,7 @@ import { UserHomePageComponent } from './Components/user-home-page/user-home-pag
     CreateSpaceComponent,
     SpaceDetailsComponent,
     CommunityDetailsComponent,
+    UserHomePageComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
