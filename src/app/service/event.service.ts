@@ -65,4 +65,7 @@ export class EventService {
   public getEventByTitle(title: string) {
     return this.httpClient.get(this.url + '/title/' + title);
   }
+  public getEventAttendees(eventId:number) : Observable<any>{
+    return this.httpClient.get(`${this.url}/${eventId}/attendees`);
+  }
 }

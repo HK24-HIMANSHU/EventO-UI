@@ -1,1 +1,32 @@
-<p>user-home-page works!</p>
+<div class="home-wrapper">
+    <app-navbar-main></app-navbar-main>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="home-container">
+        <div class="side-navbar">
+            <app-sidebar topcoms="react">
+            </app-sidebar>
+        </div>
+        <div class="postandcomm-wrapper">
+            <app-home-func (type)="getType($event)"></app-home-func>
+            <div *ngIf="type=='1'">
+                <div *ngFor="let ev of events">
+                    <app-event-post title="{{ ev.name }}"
+                        description="lorem ipsum dolor sit amet consectetur adipisicing elit. quisquam, quos! lorem ipsum dolor sit amet consectetur adipisicing elit."
+                        rules="{{ ev.rules }}" memberJoined="10" userProfile="{{userId}}"></app-event-post>
+                </div>
+            </div>
+            <div *ngIf="type != '1'">
+                <div *ngFor="let comm of communities">
+                    <app-community-card title="{{ comm.community.name }}"
+                        description="lorem ipsum dolor sit amet consectetur adipisicing elit. quisquam, quos! lorem ipsum dolor sit amet consectetur adipisicing elit."
+                        rules="lorem ipsum dolor sit amet consectetur adipisicing elit." userProfile="{{ comm.community.userid }}"
+                        memberjoined="5">
+                    </app-community-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
