@@ -3,36 +3,13 @@
   <h1 style="color: var(--color-white); align-self: center; margin: 32px">
     Owner Sign up
   </h1>
-  <input
-    class="inputField"
-    type="email"
-    name="ForId"
-    id="ForId"
-    [(ngModel)]="owner.Email"
-    placeholder="Enter Email Id"
-  />
-  <input
-    class="inputField"
-    type="text"
-    name="ForId"
-    id="ForId"
-    [(ngModel)]="owner.Username"
-    placeholder="Enter Name"
-  />
-  <input
-    class="inputField"
-    type="password"
-    name="ForId"
-    id="ForId"
-    [(ngModel)]="owner.Password"
-    placeholder="Enter Password"
-  />
-  <input
-    class="inputField"
-    type="password"
-    name="ForId"
-    id="ForId"
-    placeholder="Confirm Password"
-  />
+  <input class="inputField" type="email" name="ForId" id="ForId" [(ngModel)]="owner.Email"
+    placeholder="Enter Email Id" />
+  <input class="inputField" type="text" name="ForId" id="ForId" [(ngModel)]="owner.Username" placeholder="Enter Name" />
+  <input class="inputField" type="password" name="ForId" id="ForId" [(ngModel)]="owner.Password"
+    placeholder="Enter Password" />
+  <input class="inputField" type="password" name="ForId" id="ForId" placeholder="Confirm Password" />
+  <p style="align-self: center; color:#fff">Already have an account? <a style="color:blanchedalmond"
+      href="owner/login">Login</a> </p>
   <button class="primary-btn">Sign up</button>
 </form>
