@@ -65,6 +65,7 @@ import { UserHomePageComponent } from './Components/user-home-page/user-home-pag
     SpaceListingComponent,
     SpaceCardComponent,
     UserDisplayComponent,
+    OwnerNavbarComponent,
     OwnerloginComponent,
     OwnerSignupComponent,
     SpaceCardComponent,
