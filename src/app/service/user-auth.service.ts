@@ -21,7 +21,4 @@ export class UserAuthService {
     return this.httpClint.post<any>(this.url + 'register', user);
   }
 
-  public getUserById(id: number) {
-    return this.httpClint.get(this.url + id);
-  }
 }

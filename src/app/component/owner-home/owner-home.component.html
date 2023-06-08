@@ -1,5 +1,5 @@
 <div class="home-wrapper">
-  <app-navbar-main></app-navbar-main>
+  <app-owner-navbar></app-owner-navbar>
   <br />
   <br />
   <br />
@@ -26,19 +26,11 @@
           justify-content: start;
           gap: 20px;
           flex-wrap: wrap;
-        "
-        class="wrapper-post"
-      >
+        " class="wrapper-post">
         <div *ngFor="let sp of spaces">
           <div style="max-width: 300px">
-            <app-event-post
-              routerLink="/space/details/{{ sp.id }}"
-              title="{{ sp.name }}"
-              description="Lorem ipsum dolor sit amet !"
-              rules="{{ sp.location }}"
-              userProfile="{{ sp.adminId }}"
-              memberJoined="{{ sp.capacity }}"
-            ></app-event-post>
+            <app-space-card routerLink="/space/details/{{ sp.id }}" name="{{ sp.name }}" location="{{ sp.location }}"
+              capacity="{{ sp.capacity }}" price="{{ sp.price }}"></app-space-card>
           </div>
         </div>
       </div>
