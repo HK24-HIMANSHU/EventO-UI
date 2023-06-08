@@ -77,4 +77,4 @@ import { UserHomePageComponent } from './Components/user-home-page/user-home-pag
   providers: [],
   bootstrap: [AppComponent, MainLayoutComponent],
 })
-export class AppModule {}
+export class AppModule { }

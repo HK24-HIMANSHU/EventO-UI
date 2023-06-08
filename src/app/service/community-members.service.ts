@@ -9,10 +9,10 @@ export class CommunityMembersService {
 
   constructor(private httpClient: HttpClient) {}
 
-  url = 'http://localhost:3000/community-members/';
+  url = 'http://localhost:5171/Community';
 
-  public createMember(member: CommunityMembersService) {
-    return this.httpClient.post(this.url + 'create', member);
+  public createMember(cmId: number, uId: number) {
+    return this.httpClient.post(this.url + `/${cmId}/add/${uId}`, cmId);
   }
 
   public getMemberById(id: number) {
