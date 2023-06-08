@@ -8,7 +8,7 @@
   <div class="eventpage-wrapper">
     <div style="display: flex; justify-content: space-between" class="div-flex">
       <h1>{{ com.name }}</h1>
-      <a routerLink="/event/create" class="create-event">Create Events</a>
+      <a *ngIf="isMine" routerLink="/event/create" class="create-event">Create Events</a>
     </div>
 
     <img
@@ -34,7 +34,12 @@
       <button class="primary-btn">Delete Community</button>
     </div>
     <div *ngIf="!isMine">
-      <button class="primary-btn">Join</button>
+      <div *ngIf="!joined">
+        <button class="primary-btn">Join</button>
+      </div>
+      <div *ngIf="joined">
+        <button class="primary-btn">Joined</button>
+      </div>
     </div>
   </div>
 </div>
