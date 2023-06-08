@@ -69,10 +69,10 @@ import { CommunityDetailsComponent } from './component/community-details/communi
     AllCommunitiesComponent,
     CreateSpaceComponent,
     SpaceDetailsComponent,
-    CommunityDetailsComponent
+    CommunityDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent, MainLayoutComponent],
 })
-export class AppModule {}
+export class AppModule { }
