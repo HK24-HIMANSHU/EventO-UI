@@ -11,9 +11,10 @@ import { SpaceService } from 'src/app/service/space.service';
 export class OwnerHomeComponent {
   events: Event[] = [];
   spaces: Space[] = [];
+  ownerInfo = JSON.parse(localStorage.getItem('ownerInfo')!);
   constructor(private spaceService: SpaceService) {}
   ngOnInit(): void {
-    this.spaceService.getAllSpaces().subscribe((data) => {
+    this.spaceService.getSpaceByOwnerId(parseInt(this.ownerInfo.id)).subscribe((data) => {
       this.spaces = data;
     });
   }

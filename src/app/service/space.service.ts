@@ -32,7 +32,7 @@ export class SpaceService {
     return this.httpClient.get<any>(this.url + `/${id}`);
   }
   public getSpaceByOwnerId(id: number): Observable<Space[]> {
-    return this.httpClient.get<Space[]>(this.url + '/owner/' + id);
+    return this.httpClient.get<Space[]>('http://localhost:5171/Owner'+ '/' + id + '/spaces');
   }
   public getSpaceByCommunityId(id: number) {
     // return this.httpClient.get(this.url + '/community/' + id);
