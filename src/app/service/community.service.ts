@@ -10,10 +10,10 @@ export class CommunityService {
   community: Community = {} as Community;
   constructor(private httpClient: HttpClient) {}
 
-  url = 'http://localhost:3000/community';
+  url = 'http://localhost:5171/Community';
 
   public getAllCommunities(): Observable<Community[]> {
-    return this.httpClient.get<Community[]>(this.url);
+    return this.httpClient.get<Community[]>(this.url + '/all');
   }
 
   public createCommunity(community: Community) {
