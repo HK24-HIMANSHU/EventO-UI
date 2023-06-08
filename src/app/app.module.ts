@@ -34,6 +34,7 @@ import { AllCommunitiesComponent } from './component/all-communities/all-communi
 import { CreateSpaceComponent } from './component/create-space/create-space.component';
 import { SpaceDetailsComponent } from './component/space-details/space-details.component';
 import { CommunityDetailsComponent } from './component/community-details/community-details.component';
+import { OwnerNavbarComponent } from './component/owner-navbar/owner-navbar.component';
 import { UserHomePageComponent } from './Components/user-home-page/user-home-page.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
@@ -71,7 +72,6 @@ import { UserHomePageComponent } from './Components/user-home-page/user-home-pag
     CreateSpaceComponent,
     SpaceDetailsComponent,
     CommunityDetailsComponent,
-    UserHomePageComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
