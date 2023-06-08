@@ -9,6 +9,6 @@ export class CommunityCardComponent {
   @Input() title: string = 'Title';
   @Input() description: string = 'Description';
   @Input() rules: string = 'Rules';
-  @Input() userProfile: string = 'User';
+  @Input() userProfile: any = 'User';
   @Input() memberJoined: string = '0';
 }

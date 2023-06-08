@@ -9,17 +9,17 @@ import { Community } from 'src/app/model/community';
 export class CreateCommunityComponent implements OnInit {
   user: any;
   community: Community = {
-    Id: 0,
-    InviteTokenId: 0,
-    IsExclusive: false,
-    IsPremium: false,
-    Price: 0,
-    Name: '',
-    UserId: 0,
+    id: 0,
+    inviteTokenId: 0,
+    isExclusive: false,
+    isPremium: false,
+    price: 0,
+    name: '',
+    userId: 0,
   } as Community;
   ngOnInit(): void {
     this.user = localStorage.getItem('userInfo');
     console.log(this.user);
-    this.community.UserId = parseInt(this.user.Id);
+    this.community.userId = parseInt(this.user.Id);
   }
 }

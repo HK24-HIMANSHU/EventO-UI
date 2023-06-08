@@ -1,22 +1,20 @@
 import { Component } from '@angular/core';
+import { Community } from 'src/app/model/community';
 import { Event } from 'src/app/model/event';
+import { CommunityService } from 'src/app/service/community.service';
 import { EventService } from 'src/app/service/event.service';
 
 @Component({
   selector: 'app-all-communities',
   templateUrl: './all-communities.component.html',
-  styleUrls: ['./all-communities.component.css']
+  styleUrls: ['./all-communities.component.css'],
 })
 export class AllCommunitiesComponent {
-  events: Event[] = [];
-  constructor(
-    private eventService: EventService,
-  ) { }
+  coms: Community[] = [];
+  constructor(private comService: CommunityService) {}
   ngOnInit(): void {
-    let obEvents = this.eventService.getAllEvents();
-    // obEvents.subscribe((data: Event[]) => {
-    //   this.events = data;
-    // });
-
+    this.comService.getAllCommunities().subscribe((data: Community[]) => {
+      this.coms = data;
+    });
   }
 }
