@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Community } from '../model/community';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +16,11 @@ export class CommunityMembersService {
   public createMember(cmId: number, uId: number) {
     return this.httpClient.post(this.url + `/${cmId}/add/${uId}`, cmId);
   }
-
+  public getUserJoinedCommunities(uId: number): Observable<[]> {
+    return this.httpClient.get<[]>(
+      `http://localhost:5171/User/${uId}/communities/joined`
+    );
+  }
   public getMemberById(id: number) {
     return this.httpClient.get(this.url + id);
   }
