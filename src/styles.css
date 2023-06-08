@@ -70,6 +70,50 @@ ul {
 
 
 
+.error-btn {
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0,
+      #931f3e 0,
+      #b20d1a 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  color: var(--color-white);
+  cursor: pointer;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  line-height: 1;
+  overflow: hidden;
+  padding: 0 16px;
+  /* position: relative; */
+  transition: box-shadow 0.15s, transform 0.15s;
+  font-size: 18px;
+  width: 24%;
+  /* position: absolute; */
+  top: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.error-btn:focus {
+  box-shadow: #e94528 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #0c7235 0 -3px 0 inset;
+}
+
+.error-btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #e22044 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.error-btn-btn:active {
+  box-shadow: #ae0527 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
 .success-btn {
   align-items: center;
   background-image: radial-gradient(100% 100% at 100% 0,

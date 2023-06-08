@@ -72,6 +72,8 @@ import { UserHomePageComponent } from './Components/user-home-page/user-home-pag
     CreateSpaceComponent,
     SpaceDetailsComponent,
     CommunityDetailsComponent,
+    // OwnerNavbarComponent,
+    UserHomePageComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
