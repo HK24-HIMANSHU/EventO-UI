@@ -1,44 +1,33 @@
 <div class="home-wrapper">
-  <app-navbar-main></app-navbar-main>
+  <app-owner-navbar></app-owner-navbar>
   <br />
   <br />
   <br />
   <br />
   <div class="home-container">
     <div class="postAndcomm-wrapper">
-      <div
-        style="
+      <div style="
           padding: 0 50px 16px 50px;
           display: flex;
           justify-content: space-between;
-        "
-        class="wrap-search-btn"
-      >
+        " class="wrap-search-btn">
         <app-searchbox></app-searchbox>
         <a routerLink="/space/create" class="create-event">Create Space</a>
       </div>
       <!-- <app-home-func (type)="getType($event)"></app-home-func>
       <div *ngIf="type == '1'"> -->
-      <div
-        style="
+      <div style="
           padding: 0 50px 0 50px;
           display: flex;
           justify-content: start;
           gap: 20px;
           flex-wrap: wrap;
-        "
-        class="wrapper-post"
-      >
+        " class="wrapper-post">
         <div *ngFor="let sp of spaces">
           <div style="max-width: 300px">
-            <app-event-post
-              routerLink="/space/details/{{ sp.id }}"
-              title="{{ sp.name }}"
-              description="Lorem ipsum dolor sit amet !"
-              rules="{{ sp.location }}"
-              userProfile="{{ sp.adminId }}"
-              memberJoined="{{ sp.capacity }}"
-            ></app-event-post>
+            <app-event-post routerLink="/space/details/{{ sp.id }}" title="{{ sp.name }}"
+              description="Lorem ipsum dolor sit amet !" rules="{{ sp.location }}" userProfile="{{ sp.adminId }}"
+              memberJoined="{{ sp.capacity }}"></app-event-post>
           </div>
         </div>
       </div>
