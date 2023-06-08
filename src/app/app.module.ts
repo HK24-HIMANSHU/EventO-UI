@@ -35,6 +35,7 @@ import { CreateSpaceComponent } from './component/create-space/create-space.comp
 import { SpaceDetailsComponent } from './component/space-details/space-details.component';
 import { CommunityDetailsComponent } from './component/community-details/community-details.component';
 import { OwnerNavbarComponent } from './component/owner-navbar/owner-navbar.component';
+import { UserHomePageComponent } from './Components/user-home-page/user-home-page.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -71,7 +72,6 @@ import { OwnerNavbarComponent } from './component/owner-navbar/owner-navbar.comp
     CreateSpaceComponent,
     SpaceDetailsComponent,
     CommunityDetailsComponent,
-    OwnerNavbarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

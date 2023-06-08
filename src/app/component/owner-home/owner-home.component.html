@@ -6,17 +6,21 @@
   <br />
   <div class="home-container">
     <div class="postAndcomm-wrapper">
-      <div style="
+      <div
+        style="
           padding: 0 50px 16px 50px;
           display: flex;
           justify-content: space-between;
-        " class="wrap-search-btn">
+        "
+        class="wrap-search-btn"
+      >
         <app-searchbox></app-searchbox>
         <a routerLink="/space/create" class="create-event">Create Space</a>
       </div>
       <!-- <app-home-func (type)="getType($event)"></app-home-func>
       <div *ngIf="type == '1'"> -->
-      <div style="
+      <div
+        style="
           padding: 0 50px 0 50px;
           display: flex;
           justify-content: start;
@@ -25,9 +29,8 @@
         " class="wrapper-post">
         <div *ngFor="let sp of spaces">
           <div style="max-width: 300px">
-            <app-event-post routerLink="/space/details/{{ sp.id }}" title="{{ sp.name }}"
-              description="Lorem ipsum dolor sit amet !" rules="{{ sp.location }}" userProfile="{{ sp.adminId }}"
-              memberJoined="{{ sp.capacity }}"></app-event-post>
+            <app-space-card routerLink="/space/details/{{ sp.id }}" name="{{ sp.name }}" location="{{ sp.location }}"
+              capacity="{{ sp.capacity }}" price="{{ sp.price }}"></app-space-card>
           </div>
         </div>
       </div>
