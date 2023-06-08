@@ -3,21 +3,9 @@
 </div>
 <form class="login-wrapper" (submit)="onSubmit()">
   <h1 style="color: #fff; align-self: center; margin: 32px">Login</h1>
-  <input
-    [(ngModel)]="user.Email"
-    class="inputField"
-    type="text"
-    name="ForId"
-    id="ForId"
-    placeholder="Enter Email"
-  />
-  <input
-    [(ngModel)]="user.Password"
-    class="inputField"
-    type="text"
-    name="ForId"
-    id="ForId"
-    placeholder="Enter Password"
-  />
+  <input style="color: #fff;" [(ngModel)]="user.Email" class="inputField" type="email" name="ForId" id="ForId"
+    placeholder="Enter Email" required />
+  <input style="color: #fff;" [(ngModel)]="user.Password" class="inputField" type="text" name="ForId" id="ForId"
+    placeholder="Enter Password" />
   <button class="primary-btn">Login</button>
 </form>
