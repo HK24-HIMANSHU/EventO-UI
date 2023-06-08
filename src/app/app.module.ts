@@ -34,6 +34,7 @@ import { AllCommunitiesComponent } from './component/all-communities/all-communi
 import { CreateSpaceComponent } from './component/create-space/create-space.component';
 import { SpaceDetailsComponent } from './component/space-details/space-details.component';
 import { CommunityDetailsComponent } from './component/community-details/community-details.component';
+import { UserHomePageComponent } from './Components/user-home-page/user-home-page.component';
 // import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
@@ -69,7 +70,8 @@ import { CommunityDetailsComponent } from './component/community-details/communi
     AllCommunitiesComponent,
     CreateSpaceComponent,
     SpaceDetailsComponent,
-    CommunityDetailsComponent
+    CommunityDetailsComponent,
+    UserHomePageComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
