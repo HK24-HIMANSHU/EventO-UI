@@ -1,21 +1,19 @@
 <app-navbar-main></app-navbar-main>
 
 <div class="eventpage-container">
+  <div style="display: flex" class="memberdis">
+    <app-memberdisplay></app-memberdisplay>
+  </div>
 
-    <div style="display: flex" class="memberdis">
-
-        <app-memberdisplay></app-memberdisplay>
-
+  <div class="eventpage-wrapper">
+    <div style="display: flex; justify-content: space-between" class="div-flex">
+      <h1>{{ com.name }}</h1>
+      <a routerLink="/event/create" class="create-event">Create Events</a>
     </div>
 
-    <div class="eventpage-wrapper">
-        <div style="display: flex; justify-content: space-between;" class="div-flex">
-            <h1>Community Details</h1>
-            <a routerLink="/event/create" class="create-event">Create Events</a>
-        </div>
-
-        <img src="https://wallpapercave.com/wp/wp2646833.jpg" style="
-
+    <img
+      src="https://wallpapercave.com/wp/wp2646833.jpg"
+      style="
         height: 400px;
 
         width: 100%;
@@ -25,15 +23,18 @@
         border-radius: 8px;
 
         margin-bottom: 20px;
+      "
+      alt=""
+    />
 
-      " alt="" />
-
-        <p>IsExclusive</p>
-        <p>IsPremium</p>
-        <p>Price</p>
-
-        <button class="primary-btn">Join</button>
-
+    <p>IsExclusive {{ com.isExclusive }}</p>
+    <p>IsPremium {{ com.isPremium }}</p>
+    <p>Price {{ com.price }}</p>
+    <div *ngIf="isMine">
+      <button class="primary-btn">Delete Community</button>
     </div>
-
+    <div *ngIf="!isMine">
+      <button class="primary-btn">Join</button>
+    </div>
+  </div>
 </div>

@@ -24,8 +24,8 @@ export class CommunityService {
     return this.httpClient.put(this.url + '/update', community);
   }
 
-  public getCommunityById(id: number) {
-    return this.httpClient.get(this.url + id);
+  public getCommunityById(id: number): Observable<Community> {
+    return this.httpClient.get<Community>(this.url + `/${id}`);
   }
 
   public getCommunityByOwnerId(id: number) {
